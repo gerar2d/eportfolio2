@@ -170,7 +170,7 @@ import {
         },
       ],
       image: eportfolio2,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/gerar2d/eportfolio2",
     },
     {
       name: "Asteroid",
