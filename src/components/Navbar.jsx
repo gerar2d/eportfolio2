@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { ologo, menu, close } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -28,8 +28,8 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex 
-      item-center py-5 fixed top-0 z-20
-       bg-primary `}
+      item-center py-5 fixed top-0 z-20 h-20
+       bg-black `}
     >
       <div className="w-full flex justify-between
       items-center max-w-7xl mx-auto">
@@ -41,8 +41,8 @@ const Navbar = () => {
             window.scrollTo(0,0);
           }}
         >
-          <img src={logo} alt="logo" className="
-          h-9 object-contain" />
+          <img src={ologo} alt="logo" className="
+          h-7 object-contain" />
           {/* <p className="text-white text-[19px]
           font-bold cursor-pointer flex">
             Gerard&nbsp;
@@ -51,7 +51,7 @@ const Navbar = () => {
           </p> */}
         </Link>
         <ul className="list-none hidden sm:flex 
-        flex-row gap-10">
+        flex-row gap-5">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -59,11 +59,13 @@ const Navbar = () => {
                 active === link.title
                 ? "text-secondary"
                 : "text-white"
-              } hover:text-white text-[18px]
-              font-medium cursor-pointer`}
+              } hover:text-white text-[18px] pt-8 font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
+              <img src={link.img}
+              onClick={() => window.open (link.source_link, "_blank")}
+              className="object-contain h-7 " />
             </li>
           ))}
         </ul>
@@ -80,7 +82,7 @@ const Navbar = () => {
           <div className={`${!toggle ? 'hidden'
           
           // bg-cyan-500 for mobile menu drop.
-          :'flex' } p-6 bg-red absolute
+          :'flex' } p-6 bg-black absolute
           top-20 right-0 mx-4 my-2 min-w-[140px]
           z-10 rounded-xl`}>
              <ul className="list-none flex 
@@ -92,7 +94,7 @@ const Navbar = () => {
                 active === link.title
                 ? "text-secondary"
                 : "text-white"
-              }font-poppins font-medium 
+              }font-poppins font-extrabold 
               cursor-pointer text-[16px]`}
               onClick={() => {
                 setToggle(!toggle);
@@ -100,11 +102,15 @@ const Navbar = () => {
               }}
             >
               <a href={`#${link.id}`}>{link.title}</a>
+              <img src={link.img}
+              onClick={() => window.open (link.source_link, "_blank")}
+              className="object-contain h-7" />
             </li>
           ))}
         </ul>
           </div>
         </div>
+        
       </div>
     </nav>
   )

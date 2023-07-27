@@ -32,6 +32,8 @@ import asteroids from "./asteroids.jpeg";
 import eportfolio2 from "./eportfolio2.jpeg";
 import sudoku from "./sudoku.png"
 import ainv from "./ainv.jpeg"
+import gor from "./gor.png"
+import ologo from "./ologo.svg"
 
 export {
   logo,
@@ -62,6 +64,8 @@ export {
   eportfolio2,
   sudoku,
   ainv,
+  ologo,
+  gor,
   csharp,
   python,
   r,

@@ -14,8 +14,7 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
+    github,
     eportfolio1,
     asteroids,
     eportfolio2,
@@ -40,6 +39,10 @@ import {
     {
       id: "contact",
       title: "Contact",
+    },
+    {
+      img: github,
+      source_link: "https://github.com/gerar2d/",
     },
   ];
   
