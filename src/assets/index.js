@@ -6,7 +6,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./Tech/css.png";
 import docker from "./Tech/docker.png";
 import figma from "./Tech/figma.png";
@@ -25,8 +24,6 @@ import threejs from "./Tech/threejs.svg";
 import csharp from "./Tech/csharp.svg";
 import python from "./Tech/python.png";
 import r from "./Tech/r.png";
-
-
 import eportfolio1 from "./eportfolio1.jpeg";
 import asteroids from "./asteroids.jpeg";
 import eportfolio2 from "./eportfolio2.jpeg";

@@ -44,9 +44,9 @@
 }
 
 .yellow-pink-gradient {
-  background: "#890a73";
-  background: linear-gradient(90.13deg, #847BBA 1.9%, #fd6e68 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #847BBA  1.9%, #fd6e68  97.5%);
+  background: "#9ADEFC";
+  background: linear-gradient(90.13deg, #fd6e68 1.9%, #9ADEFC 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #fd6e68 1.9%, #9ADEFC 97.5%);
 }
 
 
